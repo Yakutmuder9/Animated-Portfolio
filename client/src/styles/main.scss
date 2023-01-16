@@ -1,0 +1,40 @@
+@import './components/header.scss';
+@import './components/loader.scss/';
+@import './components/variables.scss';
+
+
+/*---Side Scroll Bar ---*/
+::-webkit-scrollbar {
+  width: 0.7vmin;
+}
+
+::-webkit-scrollbar-track {
+  background: #2e2e2ef0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, rgba(138, 175, 239, 0) 0%, #b1d6f1 100%);
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(191, 206, 213);
+}
+
+
+.html {
+  overflow-y: scroll;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.App {
+  width: 100vw;
+  height: auto;
+  background-color: lightblue;
+}
+
