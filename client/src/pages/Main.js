@@ -5,10 +5,11 @@ import { motion, useTransform, useViewportScroll } from 'framer-motion';
 
 const Main = () => {
   const [scrollMain, setScrollMain] = useState(true)
-  return (
+  return (<>
     <motion.div className={scrollMain ? "main-container" : 'main-container scrollTop'} >
       <Header />
       <div className='hill-container'>
+      <Component />
         <img src={Hill} alt="" id='hill' />
         <div className='sun-container'>
           <div className='sun-fade'></div>
@@ -16,26 +17,22 @@ const Main = () => {
 
         </div>
 
-        <div className='welcome-txt'>
-          <h1 className='welcome-txt'>Welcome to my Portfolio!</h1>
-
-        </div>
+      
 
         <div id="layer-0">
           <div id="layer-1">
             <div id="layer-2">
               <div id="lines">
+                <div id='side-wall-text'>
+                  when the world go that
+                </div>
                 <div id="layer-corner"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <Component />
-
-
-
-    </motion.div>
+    </motion.div></>
   )
 }
 
@@ -48,7 +45,7 @@ export const Component = () => {
   const x = useTransform(scrollYProgress, [0, 1], ['0%', '-100%']);
 
   return (
-    <div style={{ height: '200vh' }} id="scrollTxt">
+    <div style={{ height: '300vh' }}>
       <div
         style={{
           position: 'sticky',
@@ -57,11 +54,18 @@ export const Component = () => {
           width: '100%',
           overflow: 'hidden',
         }}
+        id="scrollTxt"
       >
-        <motion.p style={{ x }}>
-          Rainbow Rainbow Rainbow
-        </motion.p>
+        <div id='wall-txt'>
+          <motion.p style={{ x }}>
+            Rainbow Rainbow Rainbow
+          </motion.p>
+        </div>
+
       </div>
     </div>
   );
 };
+
+
+
