@@ -452,18 +452,18 @@
         z-index: -4;
     }
 
-    // #mtn {
-    //     background-color: #003e80;
-    //     height: 300px;
-    //     width: 1200px;
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     right: 0;
-    //     margin: auto;
-    //     z-index: -8;
-    //     transform: perspective(600px);
-    // }
+    #mtn {
+        background-color: #003e80;
+        height: 300px;
+        width: 1200px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: -8;
+        transform: perspective(600px);
+    }
    
     #mtnImg {
         position: absolute;

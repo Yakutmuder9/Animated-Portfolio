@@ -1,13 +1,38 @@
+// Color Palette
+$background: #E8F2F7;
+$white: #fff;
+$black: #24242a;
+$darkBlueColor: #1B2136;
+$midBlueColor: #152532;
+$darkWarningColor: #FAAB0D;
+$sunWarningColor: #FED97D;
+$lightWarningColor: #F1E1CC;
+$lightSecondaryColor: #F5F5F5;
+
+// Gradient colorPalette
+// $lightBlueWithSunGradient: radial-gradient(50% 50% at 49.97% 50%, #FAAB0D 0%, #E8F2F7 100%);
+$lightBlueWithSunGradient: radial-gradient(circle, rgba(250,171,13,1) 0%, rgba(232,242,247,1) 50%);
+
 // Breakpoints
 $layout-breakpoint-large: 1920px;
 $layout-breakpoint-medium: 1440px;
 $layout-breakpoint-small: 960px;
 $layout-breakpoint-xsmall: 480px;
 
-// Color Palette
-$background: #f0eff1;
-$white: #fff;
-$black: #24242a;
+/** Default max width vtex checkout */
+$maxWidth: 1170px;
+
+
+
+
+
+
+
+
+
+
+
+
 $primaryColor: #f71963;
 $secondaryColor: #383938;
 $accentColor: #2c7efd;
@@ -21,7 +46,6 @@ $backgroundInputColor: #eff0f7;
 $successColor: #8bc34a;
 $dangerColor: #ff2319;
 $infoColor: #368df7;
-$warningColor: #ffb100;
 
 
 $smartphones: 'only screen and (max-width: 579px)';
@@ -29,5 +53,6 @@ $smartphones_h: 'only screen and (min-device-width : 414px) and (max-device-widt
 $tablets: 'only screen and (min-width: 768px) and (max-width: 959px)';
 $tablets_h: 'only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)';
 
-/** Default max width vtex checkout */
-$maxWidth: 1170px;
+
+
+

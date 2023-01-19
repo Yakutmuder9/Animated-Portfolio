@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from 'framer-motion';
 
 const Loader = ({ setLoading }) => {
-
+const [entrance, serEntrance] = useState(true)
 
     return (
         // <motion.div className="loader">
@@ -28,7 +28,7 @@ const Loader = ({ setLoading }) => {
         //     </motion.div>
         // </motion.div>
 
-        <div className="loader">
+        <div className={entrance? "loader loader-entrance" : "loader"}>
             <Component1 />
         </div>
     );
@@ -41,15 +41,15 @@ const Component1 = () => {
 
     return (
         <div className="ellipse-container">
-            <div class='view'>
-                <ul class='circles'>
-                    <li class='ellipse-1 item'></li>
-                    <li class='ellipse-2 item'></li>
-                    <li class='ellipse-3 item'></li>
-                    <li class='ellipse-4 item'></li>
-                    <li class='ellipse-5 item'></li>
-                    <li class='ellipse-6 item'></li>
-                    <li class='ellipse-7 item'></li>
+            <div className='view'>
+                <ul className='circles'>
+                    <li className='ellipse-1 item'></li>
+                    <li className='ellipse-2 item'></li>
+                    <li className='ellipse-3 item'></li>
+                    <li className='ellipse-4 item'></li>
+                    <li className='ellipse-5 item'></li>
+                    <li className='ellipse-6 item'></li>
+                    <li className='ellipse-7 item'></li>
                 </ul>
             </div>
         </div>
