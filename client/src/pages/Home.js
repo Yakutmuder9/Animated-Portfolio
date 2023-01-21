@@ -13,6 +13,7 @@ const Home = () => {
   return (
     <motion.div className="home-container">
       <Main />
+      <div style={{width:"100vw", height:"100vh"}}></div>
       <About />
       <Project />
       <Contact />

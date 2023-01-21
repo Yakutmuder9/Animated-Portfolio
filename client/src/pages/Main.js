@@ -9,7 +9,7 @@ const Main = () => {
     <motion.div className={scrollMain ? "main-container" : 'main-container scrollTop'} >
       <Header />
       <div className='hill-container'>
-      <Component />
+      
         <img src={Hill} alt="" id='hill' />
         <div className='sun-container'>
           <div className='sun-fade'></div>
@@ -32,7 +32,10 @@ const Main = () => {
           </div>
         </div>
       </div>
-    </motion.div></>
+    </motion.div>
+    
+    <Component />
+    </>
   )
 }
 
@@ -45,7 +48,7 @@ export const Component = () => {
   const x = useTransform(scrollYProgress, [0, 1], ['0%', '-100%']);
 
   return (
-    <div style={{ height: '300vh' }}>
+    <div style={{ height: '50vh' }}>
       <div
         style={{
           position: 'sticky',
@@ -58,7 +61,7 @@ export const Component = () => {
       >
         <div id='wall-txt'>
           <motion.p style={{ x }}>
-            Rainbow Rainbow Rainbow
+          Explore the vast expanse of my creativity with a journey through my portfolio. 
           </motion.p>
         </div>
 

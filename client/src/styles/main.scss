@@ -215,11 +215,11 @@
     }
 }
 
-
 #scrollTxt {
     font-weight: 900;
     position: absolute;
     left: 0;
+    top: 0;
     z-index: 9999;
     font-size: 8vmin;
     color: $lightWarningColor;
@@ -227,21 +227,31 @@
         0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
         0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
         0 20px 20px rgba(0, 0, 0, 0.15);
-    transform: translate(-40%, 5%);
-    // transform: rotateY(-21deg);
-    background: rgba(0, 0, 0, 0.363);
+    transform: translate(0%, -100%);
     padding-top: 10vh;
+    margin-left: -100%;
     height: auto;
     perspective: 800px;
+    overflow: hidden;
 
     #wall-txt {
-        transform:rotateX(-10deg) rotateY(71deg)!important;
-        display: flex;
+        transform: rotateX(-10deg) rotateY(71deg) !important;
+        margin-left: -20%;
+        padding-left: 10%;
+        margin-top: 10vh;
         z-index: 9999;
+        background: rgba(0, 0, 0, 0.363);
         transform-style: preserve-3d;
+        width: auto;
+        height: 300px;
+        overflow: hidden;
+
+        @media (min-width: 992px){
+            margin-left: -5%;
+        }
     }
     p {
-        width: 30%;
+        width: auto;
         height: auto;
         transform-style: preserve-3d;
     }
